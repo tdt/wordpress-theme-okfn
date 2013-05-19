@@ -266,6 +266,13 @@ function echo_magazine_post($post, $is_featured) {
         "type" => "checkbox",
         "std" => "false"),
 		array(  "type" => "close"),
+		array(    "type" => "open"),
+		array(  "name" => "Search Icon",
+        "desc" => "Enable search bar in header",
+        "id" => $shortname."_header_search",
+        "type" => "checkbox",
+        "std" => "false"),
+		array(  "type" => "close"),
 		array(    "name" => "Sub-Header",
         "type" => "title"),
 		array(    "type" => "open"),
@@ -970,11 +977,11 @@ function my_theme_register_required_plugins() {
 		),
 		*/
 		// This is an example of how to include a plugin from the WordPress Plugin Repository
-		array(
-			'name' 		=> 'WPSocialite',
-			'slug' 		=> 'wpsocialite',
-			'required' 	=> false,
-		),
+//		array(
+//			'name' 		=> 'WPSocialite',
+//			'slug' 		=> 'wpsocialite',
+//			'required' 	=> false,
+//		),
 	);
 	// Change this to your theme text domain, used for internationalising strings
 	$theme_text_domain = 'okfn';
